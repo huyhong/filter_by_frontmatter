@@ -6,7 +6,9 @@ module Jekyll
     def filter_by_frontmatter(posts, frontmatter, type)
       filtered = []
       for post in posts
-        filtered.push(post) if post.data[frontmatter].include? type
+        if post.data[frontmatter]
+          filtered.push(post) if post.data[frontmatter].include? type
+        end
       end
       filtered
     end
