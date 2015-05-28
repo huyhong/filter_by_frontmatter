@@ -9,3 +9,7 @@ When you need to filter content by custom Frontmatter types (and not by tags/cat
 ### Example Usage:
 `{{ site.posts | filter_by_frontmatter:'coffee_varietal','caturra' }}` -> (list of posts with the custom frontmatter 'coffee_varietal' of 'caturra')
 `{{ site.posts | filter_by_frontmatter:'coffee_varietal','caturra' | size }}` -> 5
+
+### Notes:
+- Tested on Ruby 2.1.5
+- ᕕ( ᐛ )ᕗ
